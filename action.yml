@@ -1,0 +1,15 @@
+name: "Ansible Vault for Github Action"
+description: "Run Ansible Vault command"
+branding:
+  color: "white"
+  icon: "command"
+inputs:
+  args:
+    description: Command to execute
+    required: true
+  vault_key:
+    description: Vault key
+    required: true
+runs:
+  using: "docker"
+  image: "Dockerfile"
